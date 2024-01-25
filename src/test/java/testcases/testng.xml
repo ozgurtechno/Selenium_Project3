@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/ozgurtechno/IdeaProjects/Selenium_Project3">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="testcases.US_301"></class>
+            <class name="testcases.US_302"></class>
+            <class name="testcases.US_303"></class>
+            <class name="testcases.US_304"> </class>
+            <class name="testcases.US_305"></class>
+            <class name="testcases.US_306"></class>
+            <class name="testcases.US_307"></class>
+            <class name="testcases.US_308"></class>
+        </classes>
+    </test>
+</suite>
