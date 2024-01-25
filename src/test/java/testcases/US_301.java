@@ -37,8 +37,8 @@ public class US_301 extends BaseDriver {
         WebElement applyButton= driver.findElement(By.xpath("//button[@class='Promo-Apply']"));
         applyButton.click();
 
-        WebElement verificationMessage= driver.findElement(By.xpath("//span[text()='Invalid promo code']"));
-        Assert.assertTrue(verificationMessage.getText().contains("Invalid promo code"));
+        String message = driver.findElement(By.xpath("//span[text()='Invalid promo code']")).getText();
+        Assert.assertEquals(message,"Invalid promo code");
 
         quitDriver();
     }
